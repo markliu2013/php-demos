@@ -198,5 +198,15 @@
     </section>
 </div>
 <script src="video.js"></script>
+<script>
+    var medias = Array.prototype.slice.apply(document.querySelectorAll('audio,video'));
+    medias.forEach(function(media) {
+        media.addEventListener('play', function(event) {
+            medias.forEach(function(media) {
+                if(event.target != media) media.pause();
+            });
+        });
+    });
+</script>
 </body>
 </html>
