@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video Gallery</title>
+    <link href="video-js.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        #page {
+            margin: 0 auto;
+            padding-top: 50px;
+            width: 800px;
+        }
+        .gallery-container {
+            width: 100%;
+        }
+        .slider-section {
+            position: relative;
+        }
+        .slider-panel {
+            margin: 0;
+            overflow-x: scroll!important;
+            overflow: hidden;
+            scroll-behavior: smooth;
+        }
+        .media-contain ul {
+            margin: 0px;
+            padding: 0px;
+            white-space: normal;
+            list-style: none;
+        }
+        .gallery-slider {
+            margin: 0px;
+            padding: 0px;
+            white-space: nowrap;
+            display: inline-flex;
+            width: auto !important;
+        }
+        .gallery-item {
+            position: relative;
+            list-style: none;
+            display: table;
+            margin: 3px;
+            padding: 10px;
+            width: 150px;
+        }
+        .gallery-item video,
+        .gallery-item audio {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 800px) {
+            #page {
+                width: 100%;
+            }
+        }
+        @media (min-width: 576px) {
+            .gallery-item {
+                width: 150px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .gallery-item {
+                width: 200px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .gallery-item {
+                width: 300px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .gallery-item {
+                width: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="page">
+    <a href="upload.html">Upload Media Files</a>
+
+
+    <section class="gallery-container mt-4">
+        <div class="slider-section">
+            <div class="slider-panel" id="middle-slider">
+                <ul id="gallery_loader" class="gallery-slider slider-inner">
+
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader1">
+                        <div class="gallery-info">
+                            <div class="mdia_list">
+
+                                <video
+                                        class="video-js vjs-fluid"
+                                        controls
+                                        poster="1.jpeg"
+                                        data-setup="{}"
+                                        >
+                                    <source src="1.mp4" type="video/mp4" />
+                                    <source src="1.webm" type="video/webm" />
+                                    <p class="vjs-no-js">
+                                        To view this video please enable JavaScript, and consider upgrading to a
+                                        web browser that
+                                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                                >supports HTML5 video</a
+                                                >
+                                    </p>
+                                </video>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader1">
+                        <div class="gallery-info">
+                            <div class="mdia_list">
+
+                                <audio
+                                        class="video-js vjs-fluid"
+                                        controls
+                                        preload="auto"
+                                        poster="2.jpg"
+                                        data-setup='{}' >
+                                    <source src="2.mp3" type='audio/mp3'>
+                                </audio>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader1">
+                        <div class="gallery-info">
+                            <div class="mdia_list">
+
+                                <video
+                                        class="video-js vjs-fluid"
+                                        controls
+                                        poster="1.jpeg"
+                                        data-setup="{}"
+                                        >
+                                    <source src="1.mp4" type="video/mp4" />
+                                    <source src="1.webm" type="video/webm" />
+                                    <p class="vjs-no-js">
+                                        To view this video please enable JavaScript, and consider upgrading to a
+                                        web browser that
+                                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                                >supports HTML5 video</a
+                                                >
+                                    </p>
+                                </video>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader1">
+                        <div class="gallery-info">
+                            <div class="mdia_list">
+
+                                <video
+                                        class="video-js vjs-fluid"
+                                        controls
+                                        poster="1.jpeg"
+                                        data-setup="{}"
+                                        >
+                                    <source src="1.mp4" type="video/mp4" />
+                                    <source src="1.webm" type="video/webm" />
+                                    <p class="vjs-no-js">
+                                        To view this video please enable JavaScript, and consider upgrading to a
+                                        web browser that
+                                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                                >supports HTML5 video</a
+                                                >
+                                    </p>
+                                </video>
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="video.js"></script>
+</body>
+</html>
