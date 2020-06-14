@@ -50,40 +50,31 @@
             display: table;
             margin: 3px;
             padding: 10px;
-            width: 150px;
+            width: 300px;
         }
         .gallery-item video,
         .gallery-item audio {
             width: 100%;
             height: auto;
         }
-
-        @media (max-width: 800px) {
-            #page {
-                width: 100%;
-            }
-        }
-        @media (min-width: 576px) {
-            .gallery-item {
-                width: 150px;
-            }
-        }
-
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
             .gallery-item {
                 width: 200px;
             }
-        }
-
-        @media (min-width: 992px) {
-            .gallery-item {
-                width: 300px;
+            .video-js .vjs-picture-in-picture-control,
+            .video-js .vjs-time-control {
+                display: none;
             }
         }
 
-        @media (min-width: 1200px) {
+        @media (max-width: 578px) {
             .gallery-item {
-                width: 300px;
+                width: 150px;
+            }
+            .video-js .vjs-picture-in-picture-control,
+            .video-js .vjs-time-control,
+            .video-js .vjs-progress-control {
+                display: none !important;
             }
         }
 
